@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reconocimiento Facial</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Reconocimiento Facial con Face++</h1>
+    
+    <video id="video" autoplay></video>
+    <canvas id="canvas" style="display: none;"></canvas>
+    
+    <div class="buttons">
+      <button onclick="registerFace()">📸 Registrar Rostro</button>
+      <button onclick="loginFace()">🔐 Iniciar Sesión</button>
+      <button onclick="detectFace()">🧠 Detectar Info del Rostro</button>
+      <button onclick="clearToken()">🗑️ Borrar Registro</button>
+    </div>
+
+    <p class="note">Permite el uso de tu cámara para capturar el rostro.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
